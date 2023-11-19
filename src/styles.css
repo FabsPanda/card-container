@@ -1,0 +1,248 @@
+/* WARNING: sorry if my code kinda messy.*/
+/* NOTE: for the responsivity I'm using a reference point of max-width: 550px. */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #FFEBD8;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+}
+
+.logo{
+  padding: 7px 0;
+}
+
+.price p{
+  font-family: avenir-regular;
+  font-size: 14px;
+  color: #787D9C;
+}
+
+.Card {
+  font-family: sans-serif;
+  /* text-align: center; */
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  display: flex;
+  width: 544px;
+  height: 472px;
+  flex-direction: column;
+  /* box-shadow: 0px 0px 8px #a0866e; */
+}
+
+h1{
+  font-family: avenir-demibold;
+  font-size: 23px;
+  color: #1A2258;
+}
+
+h2{
+  font-family: avenir-demibold;
+  font-size: 19px;
+  color: #1A2258;
+}
+
+.content1{
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 60%; */
+  /* align-items: center; */
+}
+
+.content1 .address{
+  font-family: avenir-regular;
+  font-size: 14px;
+  color: #787D9C;
+}
+
+.condo{
+  font-family: avenir-regular;
+  font-size: 16px;
+  margin-top: 12px;
+  color: #1A2258;
+}
+.unit{
+  font-family: avenir-regular;
+  font-size: 16px;
+  /* margin-top: 5px; */
+  color: #1A2258;
+}
+
+.mainPic {
+  width: 544px;
+  height: 272px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 8px #a0866e;
+}
+
+@font-face {
+  font-family: avenir-demibold;
+  src: url(../public/avenir-demibold.woff2);
+}
+@font-face{
+  font-family: avenir-regular;
+  src: url(../public/avenir-regular.woff2);
+}
+@font-face{
+  font-family: avenir-medium;
+  src: url(../public/avenir-medium.woff2);
+}
+
+.mainContent {
+  display:  flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 24px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 0px 8px #a0866e;
+}
+
+.right{
+  margin-left: auto;
+  align-items: center;
+}
+
+.price{
+  text-align: end;
+}
+
+.buttonContainer{
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button{
+  width: 115px;
+  height: 22px;
+  border: none;
+  background-color: white;
+  color: #216BFF;
+  font-family: avenir-demibold;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover{
+  color: #1757D7;
+}
+
+.title{
+  display: flex;
+}
+
+.description{
+  /* overflow: hidden; */
+  margin-top: 10px;
+  font-family: avenir-regular;
+  font-size: 14px;
+}
+
+.foret{
+  margin-left: 16px;
+}
+
+
+@media only screen and (max-width: 550px){
+
+  h1{
+    font-family: avenir-demibold;
+    font-size: 16px;
+    color: #1A2258;
+  }
+  .content1 .address{
+    font-family: avenir-regular;
+    font-size: 12px;
+    color: #787D9C;
+  }
+
+  h2{
+    font-family: avenir-demibold;
+    font-size: 16px;
+    color: #1A2258;
+  }
+
+  .description{
+  /* overflow: hidden; */
+    margin-top: 10px;
+    font-family: avenir-regular;
+    font-size: 12px;
+  }
+
+  .condo{
+    font-family: avenir-regular;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #1A2258;
+  }
+  .unit{
+    font-family: avenir-regular;
+    font-size: 14px;
+    /* margin-top: 5px; */
+    color: #1A2258;
+  }
+
+  .title{
+    align-items: center;
+  }
+
+  .Card {
+  font-family: sans-serif;
+  /* text-align: center; */
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  display: flex;
+  width: 343px;
+  height: 351px;
+  flex-direction: column;
+  /* box-shadow: 0px 0px 8px #a0866e; */
+  }
+
+  .mainPic {
+    width: 343px;
+    height: 160.62px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 0px 8px #a0866e;
+  }
+
+  .content1{
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+    /* align-items: center; */
+  }
+  .price{
+    text-align: start;
+  }
+  .price p{
+    font-size: 12px;
+    margin-left: 12px;
+  }
+
+  .right{
+    margin: 0;
+    margin-top: 12px;
+  }
+  .price{
+    display: flex;
+    align-items: center;
+  }
+  .buttonContainer{
+    margin-top: 12px;
+  }
+
+  button{
+    font-size: 14px;
+  }
+
+}
